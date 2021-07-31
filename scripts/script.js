@@ -65,13 +65,13 @@ OrderB.addEventListener('click', function(){
 	let number = document.querySelector("#number").value;
 	let address = document.querySelector("#address").value;
 	let Cakew = CakeName.textContent;
-	let Cakep = cakePrice.textContent;
+	let Cakep = cakePrice.textContent;				
 	let Banner = document.querySelector('.banner');
 	let BannerAdd = Banner.src;
 	console.log(BannerAdd);
-  let url = "https://wa.me/919145338722?text="; 
+  let url = "https://wa.me/918975048440?text="; 
 	
-	let FinalURL = url + `Hey Saniya, %0a %0a I'm *${name}*. %0a I Want Delicious *${Cakew}(Price: *${Cakep}*)! %0a At *${address}*. %0a`;
+	let FinalURL = url + `Hey Cherry, %0a %0a I'm *${name}*. %0a I Want Delicious *${Cakew}(Price: *${Cakep}*)! %0a At *${address}*. %0a`;
 	console.log(FinalURL);
 	if(name&&number&&address){
 	window.open(FinalURL, '_blank').focus();

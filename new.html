@@ -1,0 +1,24 @@
+<script>
+  $(document).ready(function() {
+    // URL for the POST /message request
+    var url = 'https://eu43.chat-api.com/instance**********/message?token=**********';
+    var data = {
+      phone: '***********', // Recipient's phone number
+      body: 'There should be a message here', // Message
+    };
+    // Send a request when the button is clicked
+    $(".button").click(function() {
+      $.ajax(url, {
+        data: JSON.stringify(data),
+        contentType: 'application/json',
+        type: 'POST'
+      });
+    });
+  });
+</script>
+
+<input name="name" class="t-input">
+<input name="phone" class="t-input">
+<input name="address" class="t-input">
+<input type="hidden" name="recipient" value="78888888888">
+ <!-- //Phone number of the recipient of order information in whatsapp -->

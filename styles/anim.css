@@ -1,0 +1,119 @@
+:root{
+	--anim-time: 2s;
+}	
+.intro-profile-image  {
+    animation-name: intro-img;
+    animation-duration: var(--anim-time);
+    animation-delay:calc( var(--anim-time) - 1 );
+    animation-fill-mode: forwards;
+    /* opacity: 0; */
+    /* mix-blend-mode: multiply; */
+	transform:scale(0.8);
+}
+@keyframes intro-img{
+	to{
+		opacity:1;
+		transform:scale(1);
+	}
+}
+.intro-profile:hover::before{
+	top:-50%;
+}
+.intro-profile:hover::after{
+	bottom:-50%;
+}
+.rtll{
+	display:flex;
+	/* place-content:center; */
+	justify-content:center;
+	align-items: center;
+	/* background:red; */
+}
+.rotate{
+	  animation-name: rt;
+	  width:60% !important;
+	  position:static!important;
+	  height:auto !important;
+    animation-duration: 10s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	
+}
+.rotate:hover{
+	
+}
+@keyframes rt{
+	to{
+		transform:rotate(360deg);
+	}
+}
+/* .grid-about-item > img { */
+    /* animation-name: img-m; */
+    /* animation-duration: 5s; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+/* } */
+/* @keyframes img-m{ */
+	/* to{ */
+		/* transform:scale(1.4) */
+	/* } */
+/* } */
+.intro-profile::before {
+    animation-name: rto;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.78, -0.28, 0.15, 1.29);
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 1;
+}
+@keyframes rto{
+	to{
+		
+		top:100%
+	}
+}
+
+.intro-profile::after {
+    animation-name: rto2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+	    animation-timing-function: cubic-bezier(0.78, -0.28, 0.15, 1.29);	
+    animation-iteration-count: 1;
+}
+@keyframes rto2{
+	to{
+		
+		bottom:100%
+	}
+}
+.ast {
+    animation-name: ast;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0.78, -0.28, 0.15, 1.29);
+    animation-iteration-count: infinite;
+    background: repeating-linear-gradient(90deg, var(--p-clr), #c19d6e8a 10px);
+    background-position: 0 0;
+}
+@keyframes ast{
+	to{
+		
+		background-position:0 100%;
+	}
+}
+
+.cake-modal-img {
+    animation-name: m-img;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes m-img{
+	to{
+		
+		transform:scale(1.4)rotate(4deg);
+	}
+}
